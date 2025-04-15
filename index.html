@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UltiAnalytics Project Meeting Minutes</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Meeting notes for software engineering team 
+    working to revive UltiAnalytics, an ultimate frisbee stat tracking app that 
+    has not had support for 6 years, and was taken down from the google play store.
+    Our team will be adding to the existing codebase, and re-releasing the app with
+    new features on the google play store & apple app store.">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h1>UltiAnalytics Revival & Revamp Planning</h1>
+        <h2>Meeting Type: Product Strategy & Development</h2>
+        <h3>Date: April 15, 2025</h3>
+        <nav>
+            <a href="#agenda">Agenda</a> |
+            <a href="#old">Unfinished Business</a> |
+            <a href="#new">New Business</a> |
+            <a href="#comments">Comments</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <section>
+            <h2>Attendance</h2>
+            <ul>
+                <li>Akhil S.</li>
+                <li>Ruben G.</li>
+                <li>Katherine H.</li>
+                <li>Eric Z.</li>
+                <li>Tyler K.</li>
+            </ul>
+        </section>
+
+        <section id="agenda">
+            <h2>Agenda</h2>
+            <ol>
+                <li>Assess current codebase and legacy issues</li>
+                <li>Plan Android re-release path</li>
+                <li>Discuss new feature proposals (e.g., live stat tracking)</li>
+                <li>Marketing and outreach strategy</li>
+            </ol>
+        </section>
+
+        <section id="old">
+            <h2>Unfinished Business</h2>
+            <p>Initial contact with Google Play support regarding account reinstatement.</p>
+            <p>Creating a list of features to implement</p>
+        </section>
+
+        <section id="new">
+            <h2>New Business</h2>
+            <p>Feature A</p>
+            <p>Feature B</p>
+            <p>Marketing our improved version of UltiAnalytics</p>
+        </section>
+
+        <section id="comments">
+            <h2>Miscellaneous Comments</h2>
+            <p><b>Akhil:</b> I spoke with the captain of Skipjack and the coaches for the UCSD Air Squids and Dragon
+                Coaliton.
+                They’re both excited about our plans to revive UltiAnalytics, and offered to help promote it if we have
+                a
+                working release by the start of club season in early June.</p>
+            <p>Katherine: Skipjack is a mid level men's club team, so I don't know how much impact that would have. But
+                the DCos
+                make nationals every year and are always a top 10 women's collegiate team so that would be a huge
+                impact. The Air
+                Squids are a very popular men's collegiate team with lots of connections, so they could also definetly
+                help spread the word </p>
+            <p><i>Eric:</i> That kind of exposure would be huge — we should try to make sure we can get a beta ready by
+                the start of June
+            <details>
+                <summary>Team Concerns</summary>
+                <p>We’ll need to finalize our core features soon to make that timeline realistic — maybe lock scope by
+                    end of April.</p>
+            </details>
+        </section>
+
+
+        <section>
+            <h2>Meeting Recordings</h2>
+            <p>Audio recording:</p>
+            <audio controls>
+                <source src="meeting-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <p>Video recording:</p>
+            <video width="320" height="240" controls>
+                <source src="meeting-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <h2>Feedback Form</h2>
+        <form>
+            <fieldset>
+                <legend>Meeting Feedback</legend>
+                <label>Name:
+                    <input type="text" name="name">
+                </label><br>
+
+                <label>Date:
+                    <input type="date" name="date">
+                </label><br>
+
+                <label>Topics of interest:
+                    <input type="checkbox" name="topic" value="android"> Android Relaunch
+                    <input type="checkbox" name="topic" value="uiux"> UI/UX Design
+                </label><br>
+
+                <label>Role:
+                    <input type="radio" name="role" value="dev"> Developer
+                    <input type="radio" name="role" value="pm"> PM
+                </label><br>
+
+                <label>More comments:</label><br>
+                <textarea rows="3" cols="40"></textarea><br>
+
+                <label for="role-select">Choose a team role:</label>
+                <select id="role-select" name="role-select">
+                    <option value="frontend">Frontend</option>
+                    <option value="backend">Backend</option>
+                    <option value="design">Design</option>
+                </select>
+
+                <input list="team-members" name="teammate" placeholder="Teammate name">
+                <datalist id="team-members">
+                    <option value="Akhil">
+                    <option value="Ruben">
+                    <option value="Katherine">
+                    <option value="Eric">
+                    <option value="Tyler">
+                </datalist>
+
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </footer>
+
+    <span>This page is handcrafted with HTML only.</span>
+</body>
+
+</html>
