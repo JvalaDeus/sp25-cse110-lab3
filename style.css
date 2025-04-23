@@ -1,0 +1,188 @@
+/* Color */
+
+h1 {
+    color: green;
+}
+
+h2 {
+    color: rgb(113, 0, 113)
+}
+
+p {
+    color: #000;
+}
+
+/* CSS Variable with fallback */
+.fallback-example {
+    color: var(--undefined-color, hotpink);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+/* Background */
+.box {
+    background-color: rgba(177, 242, 251, 0.96);
+}
+
+h1 {
+    background-color: #000;
+}
+
+h2 {
+    background-color: white;
+}
+
+/* 
+    Units:
+    Using relative units for width, height, and margin 
+    Using absolute units for padding, border, and font size */
+.box {
+    width: 80%;
+    height: 10em;
+    padding: 20px;
+    margin: 2rem;
+    border: 2pt solid black;
+    font-size: 1.5vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Box Model */
+.box-longhand {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000;
+    border-radius: 10px;
+}
+
+.box-shorthand {
+    margin: 10px 20px 10px 20px;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid teal;
+}
+
+/* Text styling */
+h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Display values */
+.inline {
+    display: inline;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+/* Sizing */
+img {
+    width: 300px;
+    height: auto;
+    max-width: 100%;
+    min-width: 150px;
+}
+
+/* Positioning */
+.fixed-box {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.relative-box {
+    position: relative;
+    left: 20px;
+}
+
+/* Psuedo-class */
+button:hover {
+    color: springgreen;
+}
+
+button:active {
+    color: red;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: yellow;
+}
+
+.team-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.team-box {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.team-box img {
+    width: 80px;
+    height: auto;
+    margin-top: 5px;
+}
+
+
+/* Responsiveness */
+@media (max-width: 1000px) {
+    .box {
+        width: auto;
+        height: auto;
+        flex-direction: column;
+    }
+    h1, h2 {
+        font-size: 1.2em;
+    }
+}
+
+.attendance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.attendance-grid > div {
+    border: 1px solid black;
+    padding: 2px;
+    text-align: center;
+    border-radius: 1px;
+}
+
+.attendance-grid .present {
+    background-color: rgb(81, 202, 81);
+}
+.attendance-grid .absent {
+    background-color: rgb(252, 134, 134);
+}
