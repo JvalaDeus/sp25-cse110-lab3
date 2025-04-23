@@ -1,1 +1,55 @@
+/* Color */
+body {
+    
+}
 
+h1 {
+    color: green;
+}
+
+h2 {
+    color: purple
+}
+
+p {
+    color: black;
+}
+
+/* CSS Variable with fallback */
+.fallback-example {
+    color: var(--undefined-color, hotpink);
+}
+
+
+/* Background */
+.box {
+    background-color: rgba(177, 242, 251, 0.96);
+}
+
+h1 {
+    background-color: #000;
+}
+
+h2 {
+    background-color: white;
+}
+
+/* Units */
+
+/* Box Model */
+
+/* Text styling */
+
+/* Display values */
+
+/* Sizing */
+
+/* Positioning */
+
+/* Psuedo-class */
+
+/* Layouts */
+
+/* Responsiveness */
+
+/* Fonts */
