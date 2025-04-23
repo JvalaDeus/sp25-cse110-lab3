@@ -166,7 +166,7 @@ section:has(h2) {
     border-bottom: 1px dotted #ccc;
 }
 
-/* Nested Selectors */
+/* Nested Selectors with SCSS-style & syntax (if supported by preprocessor) */
 .team-container {
     display: flex;
     gap: 10px;
