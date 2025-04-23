@@ -149,7 +149,6 @@ a:hover {
     margin-top: 5px;
 }
 
-
 /* Responsiveness */
 @media (max-width: 1000px) {
     .box {
@@ -185,4 +184,44 @@ a:hover {
 }
 .attendance-grid .absent {
     background-color: rgb(252, 134, 134);
+}
+
+#agenda {
+    background-color: #1f8960;
+    border-left: 4px solid #f0f0f0;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+}
+
+section:has(h2) {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #ccc;
+}
+
+.team-container {
+    & img {
+        border: 2px solid #2d4256;
+        border-radius: 5px;
+        transition: transform 0.3s ease;
+    }
+    
+    & img:hover {
+        transform: scale(1.1);
+    }
+    
+    & p {
+        font-weight: bold;
+        color: #34495e;
+    }
 }
