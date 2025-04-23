@@ -17,7 +17,10 @@ p {
     color: var(--undefined-color, hotpink);
 }
 
-
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
 /* Background */
 .box {
     background-color: rgba(177, 242, 251, 0.96);
@@ -157,4 +160,29 @@ a:hover {
     h1, h2 {
         font-size: 1.2em;
     }
+}
+
+.attendance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.attendance-grid > div {
+    border: 1px solid black;
+    padding: 2px;
+    text-align: center;
+    border-radius: 1px;
+}
+
+.attendance-grid .present {
+    background-color: rgb(81, 202, 81);
+}
+.attendance-grid .absent {
+    background-color: rgb(252, 134, 134);
 }
